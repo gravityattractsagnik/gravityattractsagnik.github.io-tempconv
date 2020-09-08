@@ -1,7 +1,7 @@
 body {
   background-color: powderblue;
-  background-image: maths.jpeg;
-  
+  background-image: url(maths.jpeg);
+
 }
 
 h1 {
