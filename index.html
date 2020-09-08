@@ -3,45 +3,44 @@
 <head> 
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-image: url(maths.jpeg);">
+<body>
 
 
-<h1 style="color:darkblue">Fahrenheit to Celsius</h1>
+<h1>Fahrenheit to Celsius</h1>
 
-<p style="background-color:lightblue">Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
 
-<p>
+  <p>
   <label>Fahrenheit</label>
   <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-</p>
-<p>Celcius: <span id="outputCelcius"></span></p>
+  </p>
+  <p>Celcius: <span id="outputCelcius"></span></p>
 
  
-<script>
-function temperatureConverter(valNum) {
+  <script>
+  function temperatureConverter(valNum) {
   valNum = parseFloat(valNum);
-  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
-}
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;}
 
-</script>
+  </script>
 
-<h1 style="color:darkblue">Celsius to Fahrenheit</h1>
-<p style="background-color:lightblue">Type the value in Celsius field to convert the value to Fahrenheit</p>
+  <h1>Celsius to Fahrenheit</h1>
+  <p>Type the value in Celsius field to convert the value to Fahrenheit</p>
 
-<p>
+  <p>
    <label>celsius</label>
    <input id="input celsius" type="number" placeholder="celsius" oninput="ttemperatureConverter(this.value)" onchange="ttemperatureConverter(this.value)">
-</p>
-<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+  </p>
+  <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
 
 
-<script>
-function ttemperatureConverter(valNum) {
+  <script>
+  function ttemperatureConverter(valNum) {
   valNum = parseFloat(valNum);
-  document.getElementById("outputFahrenheit").innerHTML=(valNum*9/5)+32;
-}
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*9/5)+32;}
 
-</script>
+  </script>
+
 
 
 
